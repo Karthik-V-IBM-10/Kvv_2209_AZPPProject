@@ -7,3 +7,78 @@ packages:
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+services:
+- serviceName: project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:mssql
+  packages:
+  - name: Kvv_2209_AZPPProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.kvv_2209_azpp.integrations:SIQAAdapterFlow
+  packages:
+  - name: Kvv_2209_AZPPProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.testman2603_1107b997670941958b8025084af6db48_export.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:TestDBConn
+  packages:
+  - name: Kvv_2209_AZPPProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+configurationVariables:
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.user
+  : sa
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.trustStore
+  : ""
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.password
+  : "{AES}X4QCAWgjWkTdMQvFA5XaqGmK1wuN3U1rA1B0VhuZoUw="
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.databaseName
+  : SIQACloud
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.serverName
+  : 9.60.195.99
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.keyStore
+  : ""
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionSettings.dbType
+  : MSSQL
+  ? artConnection.Kvv_2209_AZPPProject.project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mssql.connectionEnabled
+  : "false"
