@@ -12,9 +12,15 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 - name: SIQA_TimeoutTest
+  version: "1.0"
   gitServerName: SIQAGitHubTest
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
+  gitBranch: main
+- name: JDBC_without_required_jar
+  gitServerName: kvv
+  gitUrl: https://github.com/prabhakarsag
+  gitUsername: Karthik-V-IBM-10
   gitBranch: main
 services:
 - serviceName: project.kvv_2209_azpp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:mssql
@@ -22,6 +28,8 @@ services:
   - name: Kvv_2209_AZPPProject
     version: "1.0"
   - name: SIQA_TimeoutTest
+    version: "1.0"
+  - name: JDBC_without_required_jar
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -33,6 +41,8 @@ services:
     version: "1.0"
   - name: SIQA_TimeoutTest
     version: "1.0"
+  - name: JDBC_without_required_jar
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -42,6 +52,8 @@ services:
   - name: Kvv_2209_AZPPProject
     version: "1.0"
   - name: SIQA_TimeoutTest
+    version: "1.0"
+  - name: JDBC_without_required_jar
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
