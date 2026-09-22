@@ -1,0 +1,10 @@
+version: "1.0"
+projectName: Kvv_2209_AZPPProject
+runtimes:
+- runtimeAlias: kvv_2209_AZPP
+  assets:
+  - name: 180ert Workflow
+    type: workflow
+    uid: fl28cde2b0dfe24583b7880292e9e6a42a
+    stepId: a0
+    reference: SIQA_TimeoutTest:delayfor180Sec
